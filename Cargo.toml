@@ -1,0 +1,17 @@
+[package]
+name = "bindc"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "bindc"
+path = "src/main.rs"
+
+[dependencies]
+structopt = "0.3.5"
+nom = { version = "5.0.1", features = [ "regexp_macros" ] }
+lazy_static = "1.4.0"
+bitfield = "0.13.2"
